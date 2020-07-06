@@ -1,0 +1,31 @@
+<%- include('../partials/head.ejs') %>
+
+<div class="container my-container my-5">
+    <div class="row justify-content-md-center">
+        <div class="col-md-6 offet-md-3">
+            <div class="card card-body">
+                <h4 class="mb-3"> Create a New Account</h4>
+                <form action="/playground/play" method="POST" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <label for="username">Enter your username (must be unique)</label>
+                        <input type="text" name="username" class="form-control" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="file">Choose your file</label>
+                        <input type="file" name="my-file" class="form-control-file">
+                    </div>
+
+
+                    <button type="submit" class="btn btn-outline-primary">Signup</button>
+                </form>
+                <a href="/auth/login" class="my-3 text-center">Already have an account? Login here </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<%- include('../partials/footer.ejs') %>
+</body>
+
+</html>
